@@ -110,7 +110,7 @@ async function removePlayed() {
 
 }
 
-await removePlayed();
+
 // Create a new MutationObserver with the callback function
 const observer = new MutationObserver(handleDomChange);
 
