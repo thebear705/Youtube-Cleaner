@@ -1,7 +1,7 @@
 // Function to be executed when the DOM content changes
 function handleDomChange(mutationsList, observer) {
     // Your code to handle the DOM changes here
-    removeShorts();
+    removeShorts(); 
     removePlayed();
     console.log("DOM content changed!");
 }
@@ -44,7 +44,7 @@ async function removePlayed() {
     /** List of Actions that can affect the playlist, includes save, clear */
     var playlist_actions = document.getElementById('playlist-actions') // Get playlist Actions
 
-    
+
     /** Element that contains the queue */
     var queue_column = document.getElementsByTagName('ytd-playlist-panel-renderer')[1]
     /** String that shows number of items in the queue and which index is currently playing */
