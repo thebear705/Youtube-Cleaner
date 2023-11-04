@@ -1,6 +1,6 @@
 # Youtube Cleaner
 
-Tired of clutter on your YouTube desktop page? YouTube Cleaner is here to help. While YouTube is great for content, it can sometimes have a whole bunch of unnecessary things that you might want cleaned up. Our extension offers a simple solution to declutter your YouTube experience.
+Tired of clutter on your YouTube desktop page? YouTube Cleaner is here to help. While YouTube is great for content, it can sometimes have a whole bunch of unnecessary clutter that you might want cleaned up. Our extension offers a simple solution to declutter your YouTube experience.
 
 ## Key Features
 
