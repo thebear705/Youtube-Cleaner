@@ -12,6 +12,12 @@ Tired of clutter on your YouTube desktop page? YouTube Cleaner is here to help. 
 
 Stay tuned for more exciting features as we continue to enhance your YouTube experience with YouTube Cleaner. Say goodbye to the clutter and enjoy a cleaner YouTube.
 
+## Show Your Support
+
+I've made this extension free open source so you can fork and edit it as you please. If you found this extension helpful please show support and [Buy Me A Beer](https://www.buymeacoffee.com/thebe) 🍺 so that I can continue to update the app with new features and bug fixes.
+
+<a href="https://www.buymeacoffee.com/thebe"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a beer&emoji=🍺&slug=thebe&button_colour=FFDD00&font_colour=000000&font_family=Arial&outline_colour=000000&coffee_colour=ffffff" /></a>
+
 ## Installation
 
 There are two options available for installation download from the Chrome Web store or manual installation,
@@ -29,12 +35,6 @@ If you want to take the scenic route to installation or just want to make sure t
 - and loading an unpacked extension
 
 You should know how to do this if you prefer this method but in case you don't here are links to some tutorials.
-
-## Show Your Support
-
-I've made this extension free open source so you can fork and edit it as you please. If you found this extension helpful please show support and [Buy Me A Beer](https://www.buymeacoffee.com/thebe) 🍺 so that I can continue to update the app with new features and bug fixes.
-
-<a href="https://www.buymeacoffee.com/thebe"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a beer&emoji=🍺&slug=thebe&button_colour=FFDD00&font_colour=000000&font_family=Arial&outline_colour=000000&coffee_colour=ffffff" /></a>
 
 ## Feature Suggestions
 
