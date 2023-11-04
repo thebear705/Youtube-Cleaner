@@ -32,8 +32,7 @@ You should know how to do this if you prefer this method but in case you don't h
 
 ## Show Your Support
 
-I've made this extension free open source so you can fork and edit it as you please. If you found this extension helpful please show support and [Buy Me A Beer 🍺](https://www.buymeacoffee.com/thebe){:target="_blank"}
- so that I can continue to update the app with new features and bug fixes.
+I've made this extension free open source so you can fork and edit it as you please. If you found this extension helpful please show support and [Buy Me A Beer 🍺](https://www.buymeacoffee.com/thebe) so that I can continue to update the app with new features and bug fixes.
 
 ## Feature Suggestions
 
