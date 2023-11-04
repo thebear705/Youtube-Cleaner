@@ -4,7 +4,7 @@
   "name": "Youtube Cleaner",
   "version": "0.0.1",
   "description": "Declutter your YouTube experience. Hide Shorts and enjoy a cleaner YouTube.",
-  "permissions": ["activeTab"],
+  
 
   "action": {
     "default_popup": "popup.html",
