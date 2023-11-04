@@ -32,7 +32,9 @@ You should know how to do this if you prefer this method but in case you don't h
 
 ## Show Your Support
 
-I've made this extension free open source so you can fork and edit it as you please. If you found this extension helpful please show support and [Buy Me A Beer 🍺](https://www.buymeacoffee.com/thebe) so that I can continue to update the app with new features and bug fixes.
+I've made this extension free open source so you can fork and edit it as you please. If you found this extension helpful please show support and [Buy Me A Beer](https://www.buymeacoffee.com/thebe) 🍺 so that I can continue to update the app with new features and bug fixes.
+
+<a href="https://www.buymeacoffee.com/thebe"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a beer&emoji=🍺&slug=thebe&button_colour=FFDD00&font_colour=000000&font_family=Arial&outline_colour=000000&coffee_colour=ffffff" /></a>
 
 ## Feature Suggestions
 
