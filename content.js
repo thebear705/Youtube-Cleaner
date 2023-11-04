@@ -1,9 +1,30 @@
 // Function to be executed when the DOM content changes
 function handleDomChange(mutationsList, observer) {
     // Your code to handle the DOM changes here
-    removeShorts(); 
-    removePlayed();
-    console.log("DOM content changed!");
+
+    /** Execute Remove Shorts */
+    removeShorts();
+    /** Execute code to add remove played */
+    //addRemovePlayedButton();
+    // console.log("DOM content changed!");
+
+    // document.addEventListener('DOMContentLoaded', function () {
+    //     // Get the checkbox element by its id
+    //     var hideShortsCheckbox = document.getElementById('hide_shorts');
+
+    //     // Add an event listener to the checkbox
+    //     hideShortsCheckbox.addEventListener('change', function () {
+    //         if (hideShortsCheckbox.checked) {
+    //             // Checkbox is checked, run Script A
+    //            console.log("Checked");
+    //         } else {
+    //             // Checkbox is unchecked, run Script B
+    //             console.log("NOT!!!! Checked");
+    //         }
+    //     });
+    // });
+
+
 }
 
 function removeShorts() {
@@ -13,8 +34,10 @@ function removeShorts() {
     if (shorts) {
         for (i = 0; i < shorts.length; i++) {
             if (shorts[i].textContent.includes("Shorts") && (shorts[i].id === "dismissible" || shorts[i].tagName === "ytd-reel-shelf-renderer")) {
-                console.log(shorts[i].textContent);
-                shorts[i].remove()
+                /** For Testing, Long the Content of the Shorts Element */
+                // console.log(shorts[i].textContent);
+                shorts[i].style.display = "none"
+                // shorts[i].remove()
                 // window.alert("Shorts Removed From Homepage");
                 console.log("Shorts Removed From Homepage");
                 break;
@@ -27,7 +50,7 @@ function removeShorts() {
     if (shorts) {
         for (i = 0; i < shorts.length; i++) {
             shorts[i].style.display = "none";
-            shorts[i].remove()
+            // shorts[i].remove()
             // window.alert("Shorts Removed From Up NExt");
             console.log("Shorts Removed From Up Next");
             break;
@@ -40,9 +63,10 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+
+
 async function removePlayed() {
-    /** List of Actions that can affect the playlist, includes save, clear */
-    var playlist_actions = document.getElementById('playlist-actions') // Get playlist Actions
+
 
 
     /** Element that contains the queue */
@@ -80,7 +104,7 @@ async function removePlayed() {
         var menu_items = popup_menu.getElementsByClassName('style-scope ytd-menu-popup-renderer')
 
         // Find and Click Remove From playlist Button
-        for (var j = 0; j < menu_items.length;j++ ) {
+        for (var j = 0; j < menu_items.length; j++) {
             if (menu_items[j].textContent.includes('Remove from playlist')) {
 
                 // // Create a MutationObserver to wait until playlist has changed to delete next video 
@@ -106,6 +130,39 @@ async function removePlayed() {
                 break; // Stop the loop once the item is found and clicked
             }
         }
+    }
+
+}
+
+function addRemovePlayedButton() {
+    /** List of Actions that can affect the playlist, includes save, clear */
+    var playlist_actions = document.getElementById('playlist-actions') // Get playlist Actions
+
+    if (playlist_actions) {
+        var centerActions = playlist_actions.querySelector('div#center-actions.style-scope.ytd-playlist-panel-renderer');
+
+        if (!centerActions) {
+            // Create the div element and set its attributes
+            centerActions = document.createElement('div');
+            centerActions.id = 'center-actions';
+            centerActions.className = 'style-scope ytd-playlist-panel-renderer';
+
+            // Set the text content
+            centerActions.textContent = 'Clear All';
+
+            // Append the newly created element to playlistActions
+            playlist_actions.appendChild(centerActions);
+            console.log('Remove All button Created')
+        } else {
+            // Set the text content if the element already exists
+            console.log('Remove All button already exists')
+            // centerActions.textContent = 'Clear All';
+        }
+
+        // Now you have the centerActions element with text content "Clear All"
+        console.log(centerActions);
+    } else {
+        console.error("Element with id 'playlist-actions' not found.");
     }
 
 }

@@ -1,0 +1,37 @@
+body {
+    width: 300px;
+    padding: 10px;
+}
+
+img {
+    max-width: 64px;
+    height: auto;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+/* Pop Up Header */
+.popup-header {
+    display: flex;
+    align-items: center;
+}
+
+.popup-header img {
+    max-width: 64px;
+    height: auto;
+}
+
+.popup-header h1 {
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.popup-header p {
+    margin-left: 10px; /* Adjust the margin as needed */
+    margin-top: 5px; /* Adjust the margin as needed */
+}

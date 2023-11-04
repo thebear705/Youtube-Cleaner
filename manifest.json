@@ -1,9 +1,9 @@
  
 {
   "manifest_version": 3,
-  "name": "ShortsBlocker",
-  "version": "1.1",
-  "description": "Removes shorts from Desktop Youtube",
+  "name": "Youtube Cleaner",
+  "version": "0.0.1",
+  "description": "Declutter your YouTube experience. Hide Shorts and enjoy a cleaner YouTube.",
   "permissions": ["activeTab"],
 
   "action": {
@@ -24,9 +24,7 @@
     "matches": [
       "https://youtube.com/*",
       "https://www.youtube.com/*",
-      "https://youtube.com/",
-      "https://developer.chrome.com/docs/extensions/*",
-      "https://developer.chrome.com/docs/webstore/*"
+      "https://youtube.com/"
     ]
   }]
 }

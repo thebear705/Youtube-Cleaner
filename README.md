@@ -1,3 +1,3 @@
-# Youtube Shorts Blocker
+# Youtube Cleaner
 
-This chrome extension blocks blocks the youtube shorts. 
+This chrome extension blocks youtube shorts.
