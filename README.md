@@ -1,6 +1,6 @@
-# ![Extension Icon](/images/icon48.png) Youtube Cleaner
+# Youtube Cleaner
 
-
+![Extension Icon](/images/icon128.png)
 
 Tired of clutter on your YouTube desktop page? YouTube Cleaner is here to help. While YouTube is great for content, it can sometimes have a whole bunch of unnecessary clutter that you might want cleaned up. Our extension offers a simple solution to declutter your YouTube experience.
 
@@ -32,7 +32,8 @@ You should know how to do this if you prefer this method but in case you don't h
 
 ## Show Your Support
 
-I've made this extension free open source so you can fork and edit it as you please. If you found this extension helpful please show support and [Buy Me A Beer 🍺](https://www.buymeacoffee.com/thebe) so that I can continue to update the app with new features and bug fixes.
+I've made this extension free open source so you can fork and edit it as you please. If you found this extension helpful please show support and [Buy Me A Beer 🍺](https://www.buymeacoffee.com/thebe){:target="_blank"}
+ so that I can continue to update the app with new features and bug fixes.
 
 ## Feature Suggestions
 
