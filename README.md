@@ -24,7 +24,7 @@ There are two options available for installation download from the Chrome Web st
 
 ### Chrome Webstore
 
-This is the easiest method and the extension will be automacially updated by your browser. The link will be posted once the extension is approved.
+This is the easiest method and the extension will be automacially updated by your browser. [Download Here](https://chrome.google.com/webstore/detail/fhpkeombkkhakhefjjfjoiphkcdmbljj)
 
 ### Manual Installation
 
