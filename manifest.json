@@ -2,9 +2,9 @@
 {
   "manifest_version": 3,
   "name": "Youtube Cleaner",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Declutter your YouTube experience. Hide Shorts and enjoy a cleaner YouTube.",
-  
+  "permissions": ["storage"],
 
   "action": {
     "default_popup": "popup.html",

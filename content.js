@@ -2,8 +2,17 @@
 function handleDomChange(mutationsList, observer) {
     // Your code to handle the DOM changes here
 
+
+    chrome.storage.sync.get(['toggleState'], function (result) {
+        if (result.toggleState)
+            hideShorts();
+        else
+            showShorts();
+    });
+
+
     /** Execute Remove Shorts */
-    removeShorts();
+    // hideShorts();
     /** Execute code to add remove played */
     //addRemovePlayedButton();
     // console.log("DOM content changed!");
@@ -27,21 +36,22 @@ function handleDomChange(mutationsList, observer) {
 
 }
 
-function removeShorts() {
+function hideShorts() {
 
     // Shorts on home page
     shorts = document.getElementsByClassName("style-scope ytd-rich-shelf-renderer");
     if (shorts) {
         for (i = 0; i < shorts.length; i++) {
             if (shorts[i].textContent.includes("Shorts") && (shorts[i].id === "dismissible" || shorts[i].tagName === "ytd-reel-shelf-renderer")) {
-                /** For Testing, Long the Content of the Shorts Element */
+                /** For Testing, Log the Content of the Shorts Element */
                 // console.log(shorts[i].textContent);
-                shorts[i].style.display = "none"
-                // shorts[i].remove()
-                // window.alert("Shorts Removed From Homepage");
-                console.log("Shorts Removed From Homepage");
-                break;
-                // shorts[i].style.display = "none"
+
+                // Hide The shorts by setting display property to none
+                if (shorts[i].style.display != "none") {
+                    shorts[i].style.display = "none"
+                    console.log("Shorts Removed From Homepage");
+                    // break;
+                }
             }
         }
     }
@@ -49,11 +59,48 @@ function removeShorts() {
     shorts = document.getElementsByTagName("ytd-reel-shelf-renderer");
     if (shorts) {
         for (i = 0; i < shorts.length; i++) {
-            shorts[i].style.display = "none";
-            // shorts[i].remove()
-            // window.alert("Shorts Removed From Up NExt");
-            console.log("Shorts Removed From Up Next");
-            break;
+            if (shorts[i].style.display != "none") {
+                shorts[i].style.display = "none";
+                // shorts[i].remove()
+                // window.alert("Shorts Removed From Up NExt");
+                console.log("Shorts Removed From Up Next");
+                // break;
+            }
+        }
+    }
+
+}
+
+function showShorts() {
+
+    // Shorts on home page
+    shorts = document.getElementsByClassName("style-scope ytd-rich-shelf-renderer");
+    if (shorts) {
+        for (i = 0; i < shorts.length; i++) {
+            if (shorts[i].textContent.includes("Shorts") && (shorts[i].id === "dismissible" || shorts[i].tagName === "ytd-reel-shelf-renderer")) {
+                /** For Testing, Log the Content of the Shorts Element */
+                // console.log(shorts[i].textContent);
+
+                // Hide The shorts by setting display property to none
+                if (shorts[i].style.display != "") {
+                    shorts[i].style.display = ""
+                    console.log("Shorts Removed From Homepage");
+                    // break;
+                }
+            }
+        }
+    }
+
+    shorts = document.getElementsByTagName("ytd-reel-shelf-renderer");
+    if (shorts) {
+        for (i = 0; i < shorts.length; i++) {
+            if (shorts[i].style.display != "") {
+                shorts[i].style.display = "";
+                // shorts[i].remove()
+                // window.alert("Shorts Removed From Up NExt");
+                console.log("Shorts Removed From Up Next");
+                // break;
+            }
         }
     }
 
@@ -62,8 +109,6 @@ function removeShorts() {
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
-
-
 
 async function removePlayed() {
 

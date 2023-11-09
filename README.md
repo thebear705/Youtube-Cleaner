@@ -44,9 +44,10 @@ If you have any suggestions for feature I could add please feel free to let me k
 
 ### Improve Functionality
 
-- Create a toggle switch to show/hide YouTube Shorts
+- [ ] Remove played videos from queue
+- [ ] Enable Support for Dark/Light/Auto Mode for YouTube
+- [x] Create a toggle switch to show/hide YouTube Shorts
 
 ### Feature Additions
 
-- Enable Support for Dark/Light/Auto Mode for pop up
-- Remove played videos from queue
+- [x] Enable Support for Dark/Light/Auto Mode for pop up
