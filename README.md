@@ -36,6 +36,8 @@ If you want to take the scenic route to installation or just want to make sure t
 
 You should know how to do this if you prefer this method but in case you don't here are links to some tutorials.
 
+- [Chrome](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked)
+
 ## Feature Suggestions
 
 If you have any suggestions for feature I could add please feel free to let me know.

@@ -1,39 +1,17 @@
 // Function to be executed when the DOM content changes
 function handleDomChange(mutationsList, observer) {
-    // Your code to handle the DOM changes here
+    console.log("YouTube Body Chnaged")
+    toggleShorts();
 
+}
 
-    chrome.storage.sync.get(['toggleState'], function (result) {
+function toggleShorts(){
+    chrome.storage.sync.get(['toggleState']).then((result) => {
         if (result.toggleState)
             hideShorts();
         else
             showShorts();
     });
-
-
-    /** Execute Remove Shorts */
-    // hideShorts();
-    /** Execute code to add remove played */
-    //addRemovePlayedButton();
-    // console.log("DOM content changed!");
-
-    // document.addEventListener('DOMContentLoaded', function () {
-    //     // Get the checkbox element by its id
-    //     var hideShortsCheckbox = document.getElementById('hide_shorts');
-
-    //     // Add an event listener to the checkbox
-    //     hideShortsCheckbox.addEventListener('change', function () {
-    //         if (hideShortsCheckbox.checked) {
-    //             // Checkbox is checked, run Script A
-    //            console.log("Checked");
-    //         } else {
-    //             // Checkbox is unchecked, run Script B
-    //             console.log("NOT!!!! Checked");
-    //         }
-    //     });
-    // });
-
-
 }
 
 function hideShorts() {
@@ -212,6 +190,30 @@ function addRemovePlayedButton() {
 
 }
 
+chrome.storage.onChanged.addListener((changes, namespace) => {
+    
+    
+    for (let [key, { oldValue, newValue }] of Object.entries(changes)) {
+        // Log Storage changes for debug
+        console.log(
+            `Storage key "${key}" in namespace "${namespace}" changed.`,
+            `Old value was "${oldValue}", new value is "${newValue}".`
+        );
+
+        // Handle Storage Value Changes
+        switch (key) {
+            case 'toggleState':
+                toggleShorts();
+                break;
+        
+            default:
+                break;
+        } 
+    }
+
+
+
+});
 
 // Create a new MutationObserver with the callback function
 const observer = new MutationObserver(handleDomChange);
@@ -223,7 +225,8 @@ const config = {
 };
 
 // Start observing the document with the specified configuration
-observer.observe(document, config);
+youtubeBody = document.getElementsByTagName('ytd-app')[0]
+observer.observe(youtubeBody, config);
 
 // To disconnect the observer when you no longer need it (e.g., in cleanup)
 // observer.disconnect();

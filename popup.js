@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
             themeSwitchContainer.classList.remove('dark-mode', 'light-mode');
             themeSwitchContainer.classList.toggle('dark-mode', selectedTheme === 'dark');
             themeSwitchContainer.classList.toggle('light-mode', selectedTheme === 'light');
+            
         }
     }
 });
